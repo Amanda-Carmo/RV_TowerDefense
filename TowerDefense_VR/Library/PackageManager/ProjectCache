@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638187186038590942
-    m_Hash: 3155145869
+      ticks: 638191519663877507
+    m_Hash: 2667461260
   m_LockFileStatus:
     m_FilePath: D:/Projetos/P4_RV/RV_TowerDefense/TowerDefense_VR/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638187186038956048
-    m_Hash: 2821531215
+      ticks: 638191519664255751
+    m_Hash: 2504436344
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -36,6 +36,69 @@ m_LocalPackages:
 m_ProjectPath: D:/Projetos/P4_RV/RV_TowerDefense/TowerDefense_VR/Packages
 m_EditorVersion: 2021.3.17f1 (3e8111cac19d)
 m_ResolvedPackages:
+- packageId: com.unity.ai.navigation@1.0.0-exp.4
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.0-exp.4
+  source: 1
+  resolvedPath: D:\Projetos\P4_RV\RV_TowerDefense\TowerDefense_VR\Library\PackageCache\com.unity.ai.navigation@1.0.0-exp.4
+  assetPath: Packages/com.unity.ai.navigation
+  name: com.unity.ai.navigation
+  displayName: AI Navigation
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: High-level NavMesh components for building and using NavMeshes at
+    runtime and at edit time.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-exp.1
+    - 1.0.0-exp.2
+    - 1.0.0-exp.3
+    - 1.0.0-exp.4
+    - 1.1.0-pre.1
+    - 1.1.0-pre.2
+    - 1.1.1
+    - 1.1.3
+    compatible:
+    - 1.0.0-exp.1
+    - 1.0.0-exp.2
+    - 1.0.0-exp.3
+    - 1.0.0-exp.4
+    verified: 
+  dependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 637631812400000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ai.navigation.git
+    revision: e38a28933e4513afa2b6084c2948852bd9daad56
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
 - packageId: com.unity.collab-proxy@1.17.7
   testable: 0
   isDirectDependency: 1
