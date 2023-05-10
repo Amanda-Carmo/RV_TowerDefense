@@ -1,0 +1,455 @@
+Using pre-set license
+Built from '2021.3/release' branch; Version is '2021.3.17f1 (3e8111cac19d) revision 4096273'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'pt' Physical Memory: 8051 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\programas\Unity\2021.3.17f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Insper/VR/RV_TowerDefense/TowerDefense_VR
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55786
+Successfully changed project path to: D:/Insper/VR/RV_TowerDefense/TowerDefense_VR
+D:/Insper/VR/RV_TowerDefense/TowerDefense_VR
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [972] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4220118322 [EditorId] 4220118322 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-N26JR03) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [972] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4220118322 [EditorId] 4220118322 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-N26JR03) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 174.30 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.17f1 (3e8111cac19d)
+[Subsystems] Discovering subsystems at path D:/programas/Unity/2021.3.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Insper/VR/RV_TowerDefense/TowerDefense_VR/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon (TM) RX 550 (ID=0x699f)
+    Vendor:   ATI
+    VRAM:     2028 MB
+    Driver:   30.0.14030.0
+Initialize mono
+Mono path[0] = 'D:/programas/Unity/2021.3.17f1/Editor/Data/Managed'
+Mono path[1] = 'D:/programas/Unity/2021.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/programas/Unity/2021.3.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56212
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/programas/Unity/2021.3.17f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/programas/Unity/2021.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010228 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 152.71 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.300 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1303ms)
+		BeginReloadAssembly (201ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (845ms)
+			LoadAssemblies (201ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (251ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (463ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (153ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.017579 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Insper\VR\RV_TowerDefense\TowerDefense_VR\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Insper\VR\RV_TowerDefense\TowerDefense_VR\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.50 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  2.129 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2130ms)
+		BeginReloadAssembly (187ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1740ms)
+			LoadAssemblies (211ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (620ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (106ms)
+			SetupLoadedEditorAssemblies (730ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (205ms)
+				ProcessInitializeOnLoadAttributes (460ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3730 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4195.
+Memory consumption went from 134.5 MB to 133.7 MB.
+Total: 6.235200 ms (FindLiveObjects: 0.865900 ms CreateObjectMapping: 0.468500 ms MarkObjects: 3.950200 ms  DeleteObjects: 0.948800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 32708.457994 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc172811d573b296104adb4d2728db37') in 0.026063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.279450 seconds.
+  path: Assets/Scenes/TestScene.unity
+  artifactKey: Guid(1c3201624dc97614d8a016fc4322bd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TestScene.unity using Guid(1c3201624dc97614d8a016fc4322bd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b7570ec2901781d844436b843741dcc') in 0.030360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.094498 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70d50bfd533e1b65f2e00d1f97f28b26') in 0.012019 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011784 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Insper\VR\RV_TowerDefense\TowerDefense_VR\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Insper\VR\RV_TowerDefense\TowerDefense_VR\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.605 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1605ms)
+		BeginReloadAssembly (223ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (1206ms)
+			LoadAssemblies (145ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (426ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (508ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (344ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.20 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.8 MB). Loaded Objects now: 4200.
+Memory consumption went from 132.5 MB to 131.7 MB.
+Total: 4.297400 ms (FindLiveObjects: 0.383500 ms CreateObjectMapping: 0.258000 ms MarkObjects: 3.262200 ms  DeleteObjects: 0.392400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 158.086995 seconds.
+  path: Assets/WorldMaterialsFree
+  artifactKey: Guid(2f5f60a1f16b80847b2fcb6e849c7a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldMaterialsFree using Guid(2f5f60a1f16b80847b2fcb6e849c7a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '940b0f12e50487bc9dc212d3ea8ab6a7') in 0.013470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.968298 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Models/Arrow.fbx
+  artifactKey: Guid(830b6e666c246404b99676ac0771ead5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Models/Arrow.fbx using Guid(830b6e666c246404b99676ac0771ead5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dbbab1172b75719eda51b7adff2737a') in 0.624736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.407472 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow
+  artifactKey: Guid(5c33991710ad46a49b2cee86ffa1533f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow using Guid(5c33991710ad46a49b2cee86ffa1533f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2e7c16c6af0627e7c19d751863dc4a') in 0.007565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.194853 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Demo
+  artifactKey: Guid(6e9333be318eddd47b4f4d5165236726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Demo using Guid(6e9333be318eddd47b4f4d5165236726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ed6165acdae3ad9810a136555e93df') in 0.007450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.304584 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scenes
+  artifactKey: Guid(f928171a0f4d1ef44bdf19090e8d0b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scenes using Guid(f928171a0f4d1ef44bdf19090e8d0b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '293185a6d3d80a351faefcc6494c537b') in 0.001896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.038568 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scenes/CrossbowPost.asset
+  artifactKey: Guid(85364778b3c49364ea87e931c88d22b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scenes/CrossbowPost.asset using Guid(85364778b3c49364ea87e931c88d22b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafe031a19df8e5b523e9df991b8e54b') in 0.011548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.906768 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scenes/Demo.unity
+  artifactKey: Guid(68e9acc8b7655a7409a80a4c30f98324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scenes/Demo.unity using Guid(68e9acc8b7655a7409a80a4c30f98324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447ed7b4bff86492898e671d981cd89c') in 0.007257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.958322 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scenes/DisplayScene.unity
+  artifactKey: Guid(9d80ad9f561e37249a004c13b28e5b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scenes/DisplayScene.unity using Guid(9d80ad9f561e37249a004c13b28e5b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '402b07bafe2b1dea622c5b03e978d94f') in 0.008487 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008793 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Insper\VR\RV_TowerDefense\TowerDefense_VR\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Insper\VR\RV_TowerDefense\TowerDefense_VR\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.601 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1602ms)
+		BeginReloadAssembly (204ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1229ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (458ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (503ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (329ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.82 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3704 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.8 MB). Loaded Objects now: 4215.
+Memory consumption went from 137.0 MB to 136.3 MB.
+Total: 4.455500 ms (FindLiveObjects: 0.375700 ms CreateObjectMapping: 0.286700 ms MarkObjects: 3.390800 ms  DeleteObjects: 0.401200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 76.358830 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scripts
+  artifactKey: Guid(5bd56f878e6a9064195336309f73c1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scripts using Guid(5bd56f878e6a9064195336309f73c1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83588928d21462148ac3d96a2ee4fff2') in 0.014273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.875146 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scripts/CrossbowShoot.cs
+  artifactKey: Guid(c02240f5ddf427a4384309ae5d5b1834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Demo/Scripts/CrossbowShoot.cs using Guid(c02240f5ddf427a4384309ae5d5b1834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df27fa51c276132c625864b3d9e4ebf8') in 0.052577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 66.455443 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials
+  artifactKey: Guid(e645d18563023154eb77e8b522183a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials using Guid(e645d18563023154eb77e8b522183a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d41894c2a10a179018880bac07107be') in 0.282174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.632678 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials/Arrows
+  artifactKey: Guid(d5e996fbd2c75d64d808a2227f8b185e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials/Arrows using Guid(d5e996fbd2c75d64d808a2227f8b185e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c240445eb69a2debac6d03aff65c65dd') in 0.308055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials/Arrows/ArrowMaterial_RedVar.mat
+  artifactKey: Guid(fd3397edcca3081418a320168d73eae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials/Arrows/ArrowMaterial_RedVar.mat using Guid(fd3397edcca3081418a320168d73eae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '285c8ea2a50eab32b9cd75ff99c64e7d') in 2.025078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows
+  artifactKey: Guid(9538bce17c6b0f94bb6eb20314407225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows using Guid(9538bce17c6b0f94bb6eb20314407225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a751f40161b5357af4d43d55d693e64f') in 0.081210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows/CrossbowMaterial_YellowVar.mat
+  artifactKey: Guid(245f198220c2c5f42bae1a5241da3c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows/CrossbowMaterial_YellowVar.mat using Guid(245f198220c2c5f42bae1a5241da3c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db509a0f75397b703bee826e501a5d8') in 0.752979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows/CrossbowMaterial_PurpleVar.mat
+  artifactKey: Guid(ac5c25b6b9ed5094fb59e213df274d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows/CrossbowMaterial_PurpleVar.mat using Guid(ac5c25b6b9ed5094fb59e213df274d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994bf38bd96b822b552483f54a59e8ae') in 0.524010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows/CrossbowMaterial_GreenVar.mat
+  artifactKey: Guid(62eea54453cf8ac4e9942d8727c017f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows/CrossbowMaterial_GreenVar.mat using Guid(62eea54453cf8ac4e9942d8727c017f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf6d4b773d9052c905895a6fe6ea2528') in 0.325680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows/CrossbowMaterial_RedVar.mat
+  artifactKey: Guid(859d77c97b344e546872e2e29e6a1a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows/CrossbowMaterial_RedVar.mat using Guid(859d77c97b344e546872e2e29e6a1a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d8b55a23ade1b6120470a629382d19') in 0.531168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials/Arrows/ArrowMaterial_GreenVar.mat
+  artifactKey: Guid(db00e349ca412b34f862a243497b8828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials/Arrows/ArrowMaterial_GreenVar.mat using Guid(db00e349ca412b34f862a243497b8828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4846e9a4b14a25b9a9a78e2377c93bb2') in 0.502622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials/Arrows/ArrowMaterial_PurpleVar.mat
+  artifactKey: Guid(6d8b37aba27a3884ab8d96b074a28722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials/Arrows/ArrowMaterial_PurpleVar.mat using Guid(6d8b37aba27a3884ab8d96b074a28722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f144d4334ddb1936aa093f3691f46f1a') in 0.088126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials/Arrows/ArrowMaterial_YellowVar.mat
+  artifactKey: Guid(989287c51da0a4949b975140fa2bd587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials/Arrows/ArrowMaterial_YellowVar.mat using Guid(989287c51da0a4949b975140fa2bd587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3fae79a2eea2bea5a04caa06344a2d') in 0.104871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows/CrossbowMaterial_BlueVar.mat
+  artifactKey: Guid(2235ee366b5fbb54b814441d18b1fbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Materials/Crossbows/CrossbowMaterial_BlueVar.mat using Guid(2235ee366b5fbb54b814441d18b1fbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1672cd3161ca688b57a786415d1ac99a') in 0.548522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Models
+  artifactKey: Guid(70e44bde46782f343a85879750d30726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Models using Guid(70e44bde46782f343a85879750d30726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0add8f4c8bb22171db564aaa972cd1b') in 0.112021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003849 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Models/Crossbow.fbx
+  artifactKey: Guid(eaffb87fd63eadd469111e80479fbb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Models/Crossbow.fbx using Guid(eaffb87fd63eadd469111e80479fbb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '792caebb81a1796bd28535cec5231fef') in 2.004934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.725881 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Prefabs
+  artifactKey: Guid(f9fb077d451a12b4ba104a6e3fea62f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Prefabs using Guid(f9fb077d451a12b4ba104a6e3fea62f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '767a7ff40c7554d981b7889ed3d242ae') in 0.009167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.072163 seconds.
+  path: Assets/Nokobot/Sci-Fi_Crossbow/Prefabs/CrossbowScripted.prefab
+  artifactKey: Guid(0407e2fa3a878c544b622f1a5cddbf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nokobot/Sci-Fi_Crossbow/Prefabs/CrossbowScripted.prefab using Guid(0407e2fa3a878c544b622f1a5cddbf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb231bafb5b2f5a6b1fc32038d3f190e') in 0.046466 seconds 

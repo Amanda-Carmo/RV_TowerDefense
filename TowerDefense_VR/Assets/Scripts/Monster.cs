@@ -8,10 +8,10 @@ public class Monster : MonoBehaviour
     float HP = 100.0f;
 
     public GameObject Gate;
-    public NavMeshAgent ai;
+    public UnityEngine.AI.NavMeshAgent ai;
 
     public void Start(){
-        ai = GetComponent<NavMeshAgent>();
+        ai = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 
     public void TakeDamage(float dmg){
