@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.towerdefense_vr.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\Projetos\\P4_RV\\RV_TowerDefense\\TowerDefense_VR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "TowerDefense_VR [Testing]"
+        }
+      }
+    }
+  ]
+}
