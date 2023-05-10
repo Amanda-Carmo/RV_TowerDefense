@@ -10,20 +10,27 @@ public class Monster : MonoBehaviour
     public GameObject Gate;
     public float TargetTolerance = 5.0f;
     private UnityEngine.AI.NavMeshAgent ai;
+    private bool StartedWalking = false;
 
-    public void Start(){
+    public void Awake(){
+        Gate = GameObject.FindGameObjectWithTag("ObjectiveTargetTag");
         ai = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        ai.SetDestination(Gate.transform.position);
-        Debug.Log("Oi, consegui fazer o Start!");
     }
 
-    public void Update(){
-        float distance = ai.remainingDistance;
-        if (distance < this.TargetTolerance) {
-            // Debug.Log("Cheguei no alvo!");
-            ai.isStopped = true;
-            ai.SetDestination(this.gameObject.transform.position);
-        }
+    public void Start(){
+        ai.SetDestination(Gate.transform.position);
+        StartedWalking = true;
+        Debug.Log(Gate.transform.position);
+    }
+
+    public void LateUpdate(){
+        // float distance = ai.remainingDistance;
+        // Debug.Log(distance);
+        // if ((distance < this.TargetTolerance) && StartedWalking) {
+        //     // Debug.Log("Cheguei no alvo!");
+        //     ai.isStopped = true;
+        //     ai.SetDestination(this.gameObject.transform.position);
+        // }
     }
 
     public void TakeDamage(float dmg){
