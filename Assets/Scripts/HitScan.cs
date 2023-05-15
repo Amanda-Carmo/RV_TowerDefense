@@ -30,7 +30,6 @@ public class HitScan : MonoBehaviour
             targetEnabled = false;
             onTakeDamage.Invoke();
             GetComponent<Animator>().SetTrigger("Hit");
-            // StartCoroutine( this.animateHit() );
             Invoke("reEnable", 1.0f);
         }
     }
