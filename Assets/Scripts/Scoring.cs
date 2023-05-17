@@ -25,6 +25,6 @@ public class Scoring : MonoBehaviour
         // Update the score
         score = gameManager.getScore();
         text = scoreText.GetComponent<Text>(); 
-        text.text = "SCORE: " + score.ToString();     
+        text.text = "SCORE: 0" + score.ToString();     
     }
 }
