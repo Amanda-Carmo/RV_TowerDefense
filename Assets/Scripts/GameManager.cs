@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void hitGate(int damage){
+        // Debug.Log("Gate hit! " + gateHealth.ToString() + " -> " + (gateHealth-damage).ToString());
         gateHealth -= damage;
         gameOver();
     }

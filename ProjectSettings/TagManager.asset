@@ -7,6 +7,7 @@ TagManager:
   - projectile
   - ObjectiveTargetTag
   - GameManager
+  - Monster
   layers:
   - Default
   - TransparentFX
