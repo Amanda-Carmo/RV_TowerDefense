@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject spawnerObject;
     public int gateHealth = 10000;
+    public GameObject scoreText;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -36,6 +39,7 @@ public class GameManager : MonoBehaviour
     public void gainScore(int gain){
         playerMoney += gain;
         playerScore += gain;
+        scoreText.GetComponent<TMPro.TextMeshProUGUI>().text = "Score: " + playerScore.ToString();
     }
 
     public bool spendMoney(int amount){
