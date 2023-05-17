@@ -23,8 +23,7 @@ public class Spawner : MonoBehaviour
             Vector3 position = this.gameObject.transform.position;
             Quaternion rotation = this.gameObject.transform.rotation;
             position[2] += Random.Range(-20.0f, 20.0f);
-
-            Instantiate(MonsterPrefab, position, rotation);
+            gameManager.addMonster(Instantiate(MonsterPrefab, position, rotation));
         }
     }
 
