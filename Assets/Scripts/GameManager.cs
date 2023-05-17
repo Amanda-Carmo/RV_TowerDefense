@@ -6,12 +6,31 @@ public class GameManager : MonoBehaviour
 {
     private int playerScore = 0, playerMoney = 0;
     private List<GameObject> livingMonsters = new List<GameObject>();
-    public int gateHealth = 10000;
     private bool doSpawns = true;
-    
+    private Spawner spawner;
+    private float spawnTimer = 10.0f;
+    private int amountSpawned = 0;
+
+    public GameObject spawnerObject;
+    public int gateHealth = 10000;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        spawner = spawnerObject.GetComponent<Spawner>();
+    }
+
+    void Start(){
+        Invoke("spawnMonsters", spawnTimer);
+    }
+
+    private void spawnMonsters(){
+        if (doSpawns) {
+            int amt = 2;
+            amountSpawned += 1;
+            spawner.SummonMonster(amt);
+        }
+        Invoke("spawnMonsters", spawnTimer);
     }
 
     public void gainScore(int gain){
@@ -51,16 +70,6 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Over!");
             Debug.Log("Player Score: " + playerScore.ToString());
         }
-    }
-
-    public bool isSpawning(){
-        return doSpawns;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log(playerScore);
     }
 
     public int getScore(){
