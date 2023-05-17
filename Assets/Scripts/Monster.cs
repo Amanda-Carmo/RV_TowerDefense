@@ -10,18 +10,16 @@ public class Monster : MonoBehaviour
     public GameObject Gate;
     public float TargetTolerance = 5.0f;
     private UnityEngine.AI.NavMeshAgent ai;
-    private bool StartedWalking = false;
-    private GameObject gameManager;
+    private GameManager gameManager;
 
     public void Awake(){
         Gate = GameObject.FindGameObjectWithTag("ObjectiveTargetTag");
         ai = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        gameManager = FindGameObjectWithTag("GameManager");
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     public void Start(){
         ai.SetDestination(Gate.transform.position);
-        StartedWalking = true;
         Debug.Log(Gate.transform.position);
     }
 
@@ -45,7 +43,7 @@ public class Monster : MonoBehaviour
     private void die(){
         if (this.HP <= 0.0f) {
             gameManager.gainScore(1000);
-            Destroy(this.gameObject);
+            gameManager.removeMonster(this.gameObject);
         }
     }
 
