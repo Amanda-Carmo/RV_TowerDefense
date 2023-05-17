@@ -72,4 +72,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public int getScore(){
+        return playerScore;
+    }
 }
