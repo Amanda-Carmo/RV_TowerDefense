@@ -61,4 +61,8 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log(playerScore);
     }
+
+    public int getScore(){
+        return playerScore;
+    }
 }
