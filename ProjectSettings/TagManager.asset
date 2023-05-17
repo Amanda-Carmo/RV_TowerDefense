@@ -8,6 +8,7 @@ TagManager:
   - ObjectiveTargetTag
   - GameManager
   - Monster
+  - SpawnLocation
   layers:
   - Default
   - TransparentFX

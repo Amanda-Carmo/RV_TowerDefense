@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour
 
     private GameManager gameManager;
     public GameObject MonsterPrefab;
+    public List<GameObject> spawnLocations; 
 
     void Awake(){
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
@@ -15,14 +16,15 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SummonMonster", 2.0f, 10.0f);
     }
 
-    public void SummonMonster(){
-        if (gameManager.isSpawning()) {
-            Vector3 position = this.gameObject.transform.position;
-            Quaternion rotation = this.gameObject.transform.rotation;
-            position[2] += Random.Range(-20.0f, 20.0f);
+    public void SummonMonster(int NumMonsters){
+        NumMonsters = Mathf.Min(NumMonsters, spawnLocations.Count);
+        for (int i = 0; i < NumMonsters; i++){
+            int index = Random.Range(0, spawnLocations.Count);
+            GameObject obj = spawnLocations[index];
+            Vector3 position = obj.transform.position;
+            Quaternion rotation = obj.transform.rotation;
             gameManager.addMonster(Instantiate(MonsterPrefab, position, rotation));
         }
     }
