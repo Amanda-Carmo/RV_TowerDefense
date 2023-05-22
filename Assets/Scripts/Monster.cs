@@ -12,6 +12,7 @@ public class Monster : MonoBehaviour
     public float TargetTolerance = 5.0f;
     private UnityEngine.AI.NavMeshAgent ai;
     private GameManager gameManager;
+    private Gate gate;
     private bool attack = true;
 
     [SerializeField] private HealthBar _healthBar; // This is the health bar that will be updated
@@ -36,7 +37,7 @@ public class Monster : MonoBehaviour
 
     public void hitGate(){
         if (attack) {
-            gameManager.hitGate(1000);
+            gate.hitGate(1000);
             attack = false;
             Invoke("restartAttack", 1.5f);
         }

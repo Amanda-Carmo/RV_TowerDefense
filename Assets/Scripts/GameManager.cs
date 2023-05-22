@@ -13,8 +13,14 @@ public class GameManager : MonoBehaviour
     private int amountSpawned = 0;
 
     public GameObject spawnerObject;
-    public int gateHealth = 10000;
+    // public int gateHealth = 10000;
+    // public int maxGateHealth = 10000;
     public GameObject scoreText;
+
+
+    [SerializeField] private Gate gate;
+
+    private bool gateHealthZero = false;
 
 
     // Start is called before the first frame update
@@ -59,18 +65,22 @@ public class GameManager : MonoBehaviour
         Destroy(monster);
     }
 
-    public void hitGate(int damage){
-        // Debug.Log("Gate hit! " + gateHealth.ToString() + " -> " + (gateHealth-damage).ToString());
-        gateHealth -= damage;
-        gameOver();
-    }
+    // public void hitGate(int damage){
+    //     // Debug.Log("Gate hit! " + gateHealth.ToString() + " -> " + (gateHealth-damage).ToString());
+    //     gateHealth -= damage;
 
-    public void gameOver(){
-        if (gateHealth <= 0) {
+    //     gameOver();
+    // }
+
+    public void gameOver(bool gateHealthZero){
+        Debug.Log(gate.gateHealth.ToString() + " / " + gate.maxGateHealth.ToString());
+
+        if (gateHealthZero) {
             doSpawns = false;
             while (livingMonsters.Count > 0) {
                 removeMonster(livingMonsters[0]);
             }
+            Debug.Log(gate.gateHealth.ToString() + " / " + gate.maxGateHealth.ToString());
             Debug.Log("Game Over!");
             Debug.Log("Player Score: " + playerScore.ToString());
         }
