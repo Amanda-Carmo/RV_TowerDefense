@@ -13,8 +13,6 @@ public class GameManager : MonoBehaviour
     private int amountSpawned = 0;
 
     public GameObject spawnerObject;
-    // public int gateHealth = 10000;
-    // public int maxGateHealth = 10000;
     public GameObject scoreText;
 
 

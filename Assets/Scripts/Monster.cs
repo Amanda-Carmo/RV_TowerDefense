@@ -8,25 +8,27 @@ public class Monster : MonoBehaviour
     float HP = 100.0f;
     float maxHP = 100.0f;
 
-    public GameObject Gate;
+    public GameObject Target;
+    public Gate gate;
     public float TargetTolerance = 5.0f;
     private UnityEngine.AI.NavMeshAgent ai;
     private GameManager gameManager;
-    private Gate gate;
+    
     private bool attack = true;
 
+    // [SerializeField] private Gate gate; // This is the gate that will be updated
     [SerializeField] private HealthBar _healthBar; // This is the health bar that will be updated
 
     public void Awake(){
-        Gate = GameObject.FindGameObjectWithTag("ObjectiveTargetTag");
+        Target = GameObject.FindGameObjectWithTag("ObjectiveTargetTag");
+        gate = GameObject.FindGameObjectWithTag("Gate").GetComponent<Gate>();
+
         ai = GetComponent<UnityEngine.AI.NavMeshAgent>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     public void Start(){
-        ai.SetDestination(Gate.transform.position);
-        Debug.Log(Gate.transform.position);
-
+        ai.SetDestination(Target.transform.position);
         _healthBar.UpdateHealthBar(maxHP, HP); // Update the health bar
     }
 
