@@ -65,12 +65,13 @@ public class GameManager : MonoBehaviour
         Destroy(monster);
     }
 
-    // public void hitGate(int damage){
-    //     // Debug.Log("Gate hit! " + gateHealth.ToString() + " -> " + (gateHealth-damage).ToString());
-    //     gateHealth -= damage;
+    private void makeDay() {
 
-    //     gameOver();
-    // }
+    }
+
+    private void makeNight() {
+        
+    }
 
     public void gameOver(bool gateHealthZero){
         Debug.Log(gate.gateHealth.ToString() + " / " + gate.maxGateHealth.ToString());
