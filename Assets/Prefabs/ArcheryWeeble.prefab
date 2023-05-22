@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 1816648107666975022}
   - component: {fileID: 4456771461254661680}
   - component: {fileID: 6381450478765739008}
+  - component: {fileID: 2743818450037961703}
   m_Layer: 0
   m_Name: HealthCanvas
   m_TagString: Untagged
@@ -182,6 +183,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2743818450037961703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450498890794547597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef79ba758a0d214592915fc532567cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthBarSprite: {fileID: 5295617653441866432}
 --- !u!1 &4398892286988840503
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18867922, g: 0.15789309, b: 0.13421145, a: 1}
+  m_Color: {r: 0.5377358, g: 0.4000407, b: 0.2967693, a: 0.48235294}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -450,6 +464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gate: {fileID: 0}
   TargetTolerance: 5
+  _healthBar: {fileID: 2743818450037961703}
 --- !u!195 &6133055466118040996
 NavMeshAgent:
   m_ObjectHideFlags: 0

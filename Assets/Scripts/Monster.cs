@@ -6,12 +6,15 @@ using UnityEngine;
 public class Monster : MonoBehaviour
 {
     float HP = 100.0f;
+    float maxHP = 100.0f;
 
     public GameObject Gate;
     public float TargetTolerance = 5.0f;
     private UnityEngine.AI.NavMeshAgent ai;
     private GameManager gameManager;
     private bool attack = true;
+
+    [SerializeField] private HealthBar _healthBar; // This is the health bar that will be updated
 
     public void Awake(){
         Gate = GameObject.FindGameObjectWithTag("ObjectiveTargetTag");
@@ -22,6 +25,8 @@ public class Monster : MonoBehaviour
     public void Start(){
         ai.SetDestination(Gate.transform.position);
         Debug.Log(Gate.transform.position);
+
+        _healthBar.UpdateHealthBar(maxHP, HP); // Update the health bar
     }
 
     public void restartAttack(){
@@ -52,6 +57,7 @@ public class Monster : MonoBehaviour
 
     public void TakeDamage(float dmg){
         this.HP -= dmg;
+        _healthBar.UpdateHealthBar(maxHP, HP); // Update the health bar
         this.die();
     }
 
@@ -60,6 +66,11 @@ public class Monster : MonoBehaviour
             gameManager.gainScore(1000);
             gameManager.removeMonster(this.gameObject);
         }
+    }
+
+    // Test script with mouse click
+    void OnMouseDown(){
+        this.TakeDamage(10.0f);
     }
 
 }

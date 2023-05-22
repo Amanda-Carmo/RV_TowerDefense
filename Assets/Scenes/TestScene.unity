@@ -578,7 +578,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5e28af879a0814084b7bb6412639c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnerObject: {fileID: 715267208}
   gateHealth: 10000
+  scoreText: {fileID: 710005923}
 --- !u!4 &509195390
 Transform:
   m_ObjectHideFlags: 0
@@ -1004,6 +1006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MonsterPrefab: {fileID: 3032227155631684028, guid: 348b3491576539246bc3d80f6f3c3446, type: 3}
+  spawnLocations: []
 --- !u!1 &730954177
 GameObject:
   m_ObjectHideFlags: 0
