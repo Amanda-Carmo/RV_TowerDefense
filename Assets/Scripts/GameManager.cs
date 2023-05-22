@@ -12,24 +12,36 @@ public class GameManager : MonoBehaviour
     private float spawnTimer = 10.0f;
     private int amountSpawned = 0;
 
+    public Material daySkybox, nightSkybox;
+
     public GameObject spawnerObject;
     public GameObject scoreText;
+    public GameObject dummyPrefab;
+    public GameObject dummySpawnPosition;
 
 
     [SerializeField] private Gate gate;
 
-    private bool gateHealthZero = false;
+    // private bool gateHealthZero = false;
 
 
-    // Start is called before the first frame update
+    //=============================//
+    //=======Initialization========//
+    //=============================//
+
     void Awake()
     {
         spawner = spawnerObject.GetComponent<Spawner>();
+        makeDay();
     }
 
     void Start(){
         Invoke("spawnMonsters", spawnTimer);
     }
+
+    //=============================//
+    //=======MonsterSpawning=======//
+    //=============================//
 
     private void spawnMonsters(){
         if (doSpawns) {
@@ -39,6 +51,25 @@ public class GameManager : MonoBehaviour
         }
         Invoke("spawnMonsters", spawnTimer);
     }
+
+    public void addMonster(GameObject monster){
+        livingMonsters.Add(monster);
+    }
+
+    public void removeMonster(GameObject monster){
+        livingMonsters.Remove(monster);
+        Destroy(monster);
+    }
+
+    public void destroyAllMonsters(){
+        while (livingMonsters.Count > 0) {
+            removeMonster(livingMonsters[0]);
+        }
+    }
+
+    //=============================//
+    //========ScoreTracking========//
+    //=============================//
 
     public void gainScore(int gain){
         playerMoney += gain;
@@ -54,32 +85,12 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
-    public void addMonster(GameObject monster){
-        livingMonsters.Add(monster);
-    }
-
-    public void removeMonster(GameObject monster){
-        livingMonsters.Remove(monster);
-        Destroy(monster);
-    }
-
-    private void makeDay() {
-
-    }
-
-    private void makeNight() {
-        
-    }
-
     public void gameOver(bool gateHealthZero){
         Debug.Log(gate.gateHealth.ToString() + " / " + gate.maxGateHealth.ToString());
 
         if (gateHealthZero) {
             doSpawns = false;
-            while (livingMonsters.Count > 0) {
-                removeMonster(livingMonsters[0]);
-            }
-            Debug.Log(gate.gateHealth.ToString() + " / " + gate.maxGateHealth.ToString());
+            destroyAllMonsters();
             Debug.Log("Game Over!");
             Debug.Log("Player Score: " + playerScore.ToString());
         }
@@ -88,4 +99,28 @@ public class GameManager : MonoBehaviour
     public int getScore(){
         return playerScore;
     }
+
+    //=============================//
+    //========DayNightCycle========//
+    //=============================//
+
+    public void makeDay() {
+        doSpawns = false;
+        destroyAllMonsters();
+        RenderSettings.skybox = this.daySkybox;
+        spawnDummy();
+    }
+
+    public void makeNight() {
+        doSpawns = true;
+        RenderSettings.skybox = this.nightSkybox;
+        // Invoke("SpawnMonsters", spawnTimer);
+    }
+
+    private void spawnDummy() {
+        Vector3 position = dummySpawnPosition.transform.position;
+        Quaternion rotation = dummySpawnPosition.transform.rotation;
+        Instantiate(dummyPrefab, position, rotation);
+    }
+
 }
