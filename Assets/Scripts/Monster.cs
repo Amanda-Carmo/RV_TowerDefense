@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 // using UnityEngine.AI;
+// Animation
+using UnityEngine.AI;
+
 
 public class Monster : MonoBehaviour
 {
@@ -9,6 +12,7 @@ public class Monster : MonoBehaviour
     float maxHP = 100.0f;
 
     public GameObject Target;
+    public GameObject Avatar;
     public Gate gate;
     public float TargetTolerance = 5.0f;
     private UnityEngine.AI.NavMeshAgent ai;
@@ -16,10 +20,14 @@ public class Monster : MonoBehaviour
     
     private bool attack = true;
 
+    private Animator animator;
+
     // [SerializeField] private Gate gate; // This is the gate that will be updated
     [SerializeField] private HealthBar _healthBar; // This is the health bar that will be updated
 
     public void Awake(){
+        animator = Avatar.GetComponent<Animator>();
+
         Target = GameObject.FindGameObjectWithTag("ObjectiveTargetTag");
         gate = GameObject.FindGameObjectWithTag("Gate").GetComponent<Gate>();
 
@@ -28,6 +36,8 @@ public class Monster : MonoBehaviour
     }
 
     public void Start(){
+        animator.SetTrigger("Walk");
+
         ai.SetDestination(Target.transform.position);
         _healthBar.UpdateHealthBar(maxHP, HP); // Update the health bar
     }
@@ -39,6 +49,7 @@ public class Monster : MonoBehaviour
 
     public void hitGate(){
         if (attack) {
+            animator.SetTrigger("Attack");
             gate.hitGate(1000);
             attack = false;
             Invoke("restartAttack", 1.5f);
@@ -61,6 +72,7 @@ public class Monster : MonoBehaviour
     public void TakeDamage(float dmg){
         this.HP -= dmg;
         _healthBar.UpdateHealthBar(maxHP, HP); // Update the health bar
+        animator.SetTrigger("GetHit");
         this.die();
     }
 
@@ -68,6 +80,8 @@ public class Monster : MonoBehaviour
         if (this.HP <= 0.0f) {
             gameManager.gainScore(1000);
             gameManager.removeMonster(this.gameObject);
+
+            animator.SetTrigger("Death");
         }
     }
 
