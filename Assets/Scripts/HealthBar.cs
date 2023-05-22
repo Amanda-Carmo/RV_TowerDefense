@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] private Image _healthBarSprite;    
+
+    private Camera _camera;
     
     
     public void UpdateHealthBar(float maxHealth, float currentHealth)
@@ -15,15 +17,17 @@ public class HealthBar : MonoBehaviour
     }
 
 
-    // // Start is called before the first frame update
-    // void Start()
-    // {
+    // Start is called before the first frame update
+    void Start()
+    {
+        _camera = Camera.main;
         
-    // }
+    }
 
-    // // Update is called once per frame
-    // void Update()
-    // {
+    // Update is called once per frame
+    void Update()
+    {
+        transform.rotation = Quaternion.LookRotation(transform.position - _camera.transform.position);
         
-    // }
+    }
 }
