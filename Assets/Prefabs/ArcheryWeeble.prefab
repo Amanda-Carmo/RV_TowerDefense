@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d09ac2412f40841b1bdb0d0d4fa99d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dummy: 0
   onTakeDamage:
     m_PersistentCalls:
       m_Calls:
@@ -60,6 +61,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  targetAnimatorObject: {fileID: 5611824608261239070}
 --- !u!1 &3450498890794547597
 GameObject:
   m_ObjectHideFlags: 0

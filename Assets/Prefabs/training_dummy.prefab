@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2.183}
+  m_AnchoredPosition: {x: 0, y: 4.05}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8400889819548458300
@@ -206,11 +206,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5360683131785772904}
   - component: {fileID: 5615497917579445399}
-  - component: {fileID: 4860365507350306000}
-  - component: {fileID: 3210769590026566427}
+  - component: {fileID: 8357307966747718305}
+  - component: {fileID: 7395082327209437865}
+  - component: {fileID: -8972787812348745018}
   m_Layer: 0
   m_Name: training_dummy
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,20 +254,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!65 &4860365507350306000
-BoxCollider:
+--- !u!114 &8357307966747718305
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4697017240656324050}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.5538878, y: 2.2359965, z: 0.3100363}
-  m_Center: {x: -0.028971285, y: 0.8066467, z: 0.011685193}
---- !u!114 &3210769590026566427
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d09ac2412f40841b1bdb0d0d4fa99d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dummy: 1
+  onTakeDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7395082327209437865}
+        m_TargetAssemblyTypeName: DummyController, Assembly-CSharp
+        m_MethodName: ApplyDamage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7395082327209437865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,6 +294,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc8b42394afed65409ff52baa7d5a517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &-8972787812348745018
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4697017240656324050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.59
+  m_Height: 6.35
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.65, z: 0}
 --- !u!1 &5670710981246193424
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +468,7 @@ Transform:
   m_GameObject: {fileID: 6774080502169825540}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 200, y: 200, z: 200}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3728266313328643532}
@@ -457,7 +487,7 @@ GameObject:
   - component: {fileID: 2476776925156711659}
   m_Layer: 0
   m_Name: training_dummy
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -470,7 +500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6973413696058740841}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.00000011920929, z: -0.000000052154064}
+  m_LocalPosition: {x: -0, y: -0.11, z: -0.000000052154064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
