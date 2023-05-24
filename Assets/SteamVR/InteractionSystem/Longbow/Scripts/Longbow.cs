@@ -47,8 +47,8 @@ namespace Valve.VR.InteractionSystem
 		private Vector3 bowLeftVector;
 
 		public float arrowMinVelocity = 3f;
-		public float arrowMaxVelocity = 30f;
-		private float arrowVelocity = 30f;
+		public float arrowMaxVelocity = 90f;
+		private float arrowVelocity = 90f;
 
 		private float minStrainTickTime = 0.1f;
 		private float maxStrainTickTime = 0.5f;

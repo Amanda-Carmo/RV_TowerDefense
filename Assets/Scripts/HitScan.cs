@@ -4,9 +4,16 @@ using System.Collections;
 
 public class HitScan : MonoBehaviour
 {
+    public bool dummy = false;
     public UnityEvent onTakeDamage;
-
+    public GameObject targetAnimatorObject;
+    private Animator targetAnimator;
     private bool targetEnabled = true;
+
+
+    void Awake() {
+        targetAnimator = targetAnimatorObject.GetComponent<Animator>();
+    }
 
     //-------------------------------------------------
     private void ApplyDamage()
@@ -25,12 +32,16 @@ public class HitScan : MonoBehaviour
     //-------------------------------------------------
     private void OnDamageTaken()
     {
-        if ( targetEnabled )
-        {
-            targetEnabled = false;
+        if (dummy) {
             onTakeDamage.Invoke();
-            GetComponent<Animator>().SetTrigger("Hit");
-            Invoke("reEnable", 1.0f);
+        } else {
+            if ( targetEnabled )
+            {
+                targetEnabled = false;
+                onTakeDamage.Invoke();
+                targetAnimator.SetTrigger("Hit");
+                Invoke("reEnable", 1.0f);
+            }
         }
     }
 
