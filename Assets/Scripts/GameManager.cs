@@ -22,8 +22,39 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private Gate gate;
 
-    // private bool gateHealthZero = false;
+    // class StageStep {
+    //     public int spawnAmount;
+    //     public float delay;
+    //     public List<int> locations = null;
+    //     public StageStep(int amt, float delay){
+    //         spawnAmount = amt;
+    //         this.delay = delay;
+    //     }
+    //     public StageStep(int amt, float delay, List<int> locations){
+    //         spawnAmount = amt;
+    //         this.delay = delay;
+    //         this.locations = locations;
+    //     }
+    // }
 
+    // class Stage {
+    //     private List<StageStep> stepList;
+    //     public Stage(List<StageStep> stepList){
+    //         this.stepList = stepList;
+    //     }
+
+    //     public StageStep getStageStep(int i){
+    //         if (i > stepList.Count) {
+    //             Debug.Log("Freeplay enabled!");
+    //         }
+    //         return (stepList[i % stepList.Count]);
+    //     }
+    // }
+
+    // private int currStage = 0, currStageStep = 0;
+    // private const List<Stage> stages = [
+    //     Stage({StageStep(1, 8.0f), StageStep(1, 8.0f), StageStep(1, 8.0f), StageStep(1, 8.0f)}),
+    // ];
 
     //=============================//
     //=======Initialization========//
