@@ -79,8 +79,7 @@ public class Monster : MonoBehaviour
     private void die(){
         if (this.HP <= 0.0f) {
             gameManager.gainScore(1000);
-            gameManager.removeMonster(this.gameObject);
-
+            gameManager.removeMonster(this.transform.parent.gameObject);
             animator.SetTrigger("Death");
         }
     }
